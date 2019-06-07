@@ -1,4 +1,5 @@
 import * as React from 'react';
+import AudioVisualiser from './audio-visualiser';
 
 
 interface AudioAnalyserProps {
@@ -24,7 +25,9 @@ export default class AudioAnalyser extends React.Component<AudioAnalyserProps, A
   }
 
   render() {
-    return <textarea value={ this.state.audioData } />;
+    return this.state.audioData
+      ? <AudioVisualiser audioData={this.state.audioData} />
+      : '';
   }
 
   componentDidMount(): void {
