@@ -1,0 +1,9 @@
+# build files
+dist
+public
+
+# third party code
+node_modules
+
+# editor files
+.idea
