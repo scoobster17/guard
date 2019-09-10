@@ -1,2 +1,12 @@
 // css reset (~ tells webpack to look in node_modules)
 @import '~reset-css/sass/_reset';
+
+main {
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+canvas {
+  width: 100%;
+}

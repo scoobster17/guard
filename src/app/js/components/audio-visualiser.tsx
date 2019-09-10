@@ -14,7 +14,7 @@ export default class AudioVisualiser extends React.Component<AudioVisualiserProp
   }
 
   render() {
-    return <canvas width='300' height='300' ref={this.canvas} />;
+    return <canvas width='1440' height='1000' ref={this.canvas} />;
   }
 
   componentDidUpdate() {
@@ -38,7 +38,7 @@ export default class AudioVisualiser extends React.Component<AudioVisualiserProp
     let x = 0;
 
     context.lineWidth = 2;
-    context.strokeStyle = '#000000';
+    context.strokeStyle = '#00e23c';
     context.clearRect(0, 0, width, height);
     context.beginPath();
     context.moveTo(0, height / 2);
